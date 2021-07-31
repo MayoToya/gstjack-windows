@@ -1,11 +1,11 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 2.80)
 project(winjackgst)
 
-set(jackroot "c:/Program Files (x86)/Jack")
-set(jackinc "${jackroot}/includes")
+set(jackroot "c:/Program Files/Jack2")
+set(jackinc "${jackroot}/include")
 set(jacklibs "${jackroot}/lib")
 
-file(TO_CMAKE_PATH $ENV{GSTREAMER_1_0_ROOT_X86_64} gstroot)
+file(TO_CMAKE_PATH $ENV{GSTREAMER_1_0_ROOT_MSVC_X86_64} gstroot)
 
 set(gstinc ${gstroot}/include)
 set(gstlibs ${gstroot}/lib)
